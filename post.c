@@ -16,7 +16,7 @@ int main(int argc, const char *argv[]) {
     char command[30];
     //FILE* fp=fopen("/test.pcap", "rb");
     printf("unixtime::::%s",argv[1]);
-    sprintf(path,"/tmp/%s.pcap",argv[1]);
+    sprintf(path,"/data/data/com.download.nrl_download_file/%s.pcap",argv[1]);
     printf("%s\n",path);
     double speed_upload, total_time;
     char imei_start[15];//strz end 

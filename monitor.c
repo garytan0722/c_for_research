@@ -47,7 +47,7 @@ int main(int argc, const char * argv[]) {
     printf("token1: %s\n",token);
     //token=strtok(NULL,search);
     //printf("token2: %s\n",token);
-    sprintf(path,"/tmp/%s.pcap",token);
+    sprintf(path,"/data/data/com.download.nrl_download_file/%s.pcap",token);
     printf("PATH::%s\n",path);
     if((pd = pcap_dump_open(handle,path)) == NULL){
         printf("Can not open pcap file error!!");
