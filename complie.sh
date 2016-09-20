@@ -4,7 +4,7 @@ arm-linux-androideabi-gcc post.c -o post.bin -lcurl -lssl -lcrypto -lz  -I"outpu
 adb push post.bin /test
 fi
 
-if [ "$type" == 'post' ]; then
+if [ "$type" == 'libpcap' ]; then
 arm-linux-androideabi-gcc --static monitor.c -o monitor.bin -lpcap -I"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/libpcap-1.7.4/" -L"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/"
 adb push monitor.bin /test
 fi
